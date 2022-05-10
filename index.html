@@ -4,57 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
-    <link rel="icon" href="./images/gfavicon.png">
     <link rel="stylesheet" href="style.css">
+    <title>Google</title>
 </head>
 <body>
     <header>
-        <div id="left-bar">
-            <a href="#">About</a>
-            <a href="#">Store</a>
-        </div>
-
-        <div id="right-bar">
-            <a href="#">Gmail</a>
-            <a href="#">Images</a>
-        
-            <div>
-            <a href="#"><img src="./images/appicon.png" alt="google_appicon"></a>
-            </div>
-
-            <div>
-            <a href="#" id="sign-in"><button>
-                Sign in
-            </button></a>
-             </div>
-
-        </div>
+        <nav class="header-left">
+            <a href="#" class="header-links">About</a>
+            <a href="#" class="header-links">Store</a>
+        </nav>
+        <nav class="header-right">
+            <a href="#" class="header-links">Gmail</a>
+            <a href="#" class="header-links">Image</a>
+            <img src="./images/appicon.png" alt="" id="appicon">
+            <!-- <input type="button" name="" id="sign-in" class="header-links" value="Sign In"> -->
+            <button class="header-links" id="sign-in">Sign In</button>
+        </nav>
     </header>
-    
-    <main>
-        <img src="./images/googlelogo.png" alt="">
-        <div id="search-box">
-            <div id="search">
-                <img src="./images/search-icon.png" alt="">
-                <input type="search" name="search" id="search-input">
-                <a href="#">
-                    <img src="./images/google_microphone.png" alt="mic-icon" width="15px" id="mic-icon">
-                </a>
-            </div>
+    <main class="orta">
+        <img src="./images/googlelogo.png" id="google" alt="">
+        <div class="searchbar">
+            <input type="search" id="searchbar">
+            <img src="./images/magnifying_glass.jpg" alt="" id="mag">
+            <img src="./images/google_microphone.png" alt="" id="mic">
         </div>
-
-        <div id="search-buttons">
-            <button>Google Search</button>
-            <button>I'm Felling Lucky</button>
+        <div class="btn-container">
+            <button class="btn btn1">Google Search</button>
+            <button class="btn btn2">I'm Feeling Lucky</button>
         </div>
-        <div>
-            <p>Other Languages you can use Google: <a href="#">English</a> </p>
-        </div>
+        <p id="language">Other Languages you can use Google <a href="#">English</a></p>
     </main>
-
     <footer>
-
+        <div class="country">Turkey</div>
+        <nav class="footer-left">
+            <a href="#" class="footer-links" id="adv">Advertising</a>
+            <a href="#" class="footer-links">Business</a>
+            <a href="#" class="footer-links">How Search Works</a>
+        </nav>
+        <nav class="footer-right">
+            <a href="#" class="footer-links">Privacy</a>
+            <a href="#" class="footer-links">Terms</a>
+            <a href="#" class="footer-links">Settings</a>
+        </nav>
     </footer>
 </body>
 </html>
